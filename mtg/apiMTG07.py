@@ -24,10 +24,10 @@ def main():
 
     # the .json() method will dump a JSON string into Pythonic data structures. COOL!
     # This is much easier than using the urllib.request library
-    cards = resp.json()
+    cards = resp.json().get("sets")
 
 
-    print(cards.get('sets').get('name'))
+    print(cards.get("name"))
 
 if __name__ == "__main__":
     main()
