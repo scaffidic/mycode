@@ -29,7 +29,7 @@ def main():
     # Dealing with a sequence of strings all in the same date/time format, we can explicitly specify it with the format parameter
     # For very large data sets, this can greatly speed up the performance of to_datetime() compared to the default behavior
     # Any of the format codes from the strftime() and strptime() functions in Python’s built-in datetime module can be used.
-    print(pd.to_datetime(['2/25/10', '8/6/17', '12/15/12'], format='%m/%d/%y'))
+    print(pd.to_datetime(['2/25/10', '8/6/17', '12/15/12'], format='%y/%d/%m'))
     # DatetimeIndex(['2010-02-25', '2017-08-06', '2012-12-15'], dtype='datetime64[ns]', freq=None)
 
 
